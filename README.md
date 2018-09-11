@@ -7,7 +7,7 @@ Download the script and make sure it's executable:
 
 $ chmod +x ./alex 
 
-Install the script the placing it /usr/local/bin
+Install the script by placing it /usr/local/bin
 
 $ mv ./alex /usr/local/bin
 
