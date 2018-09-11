@@ -29,6 +29,6 @@ $ source /etc/enviornment && export PATH
 
 You should be good to go all you have to do now is: 
 
-sudo alex
+$ sudo alex
 
 Press Ctrl-C to return to your console. 
