@@ -12,6 +12,7 @@ Install the script by placing it /usr/local/bin
 $ mv ./alex /usr/local/bin
 
 Next edit your /etc/enviornment file and add this:
+
 PATH="/usr/local/bin:/usr/bin:/sbin:/bin:/usr/local/sbin" 
 
 Now you'll want to source this file: 
