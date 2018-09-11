@@ -6,12 +6,15 @@ trap ctrl_c INT
 function ctrl_c() {
 	clear
 }
+# Now we define what this does
 
 for i in 'seq 1 5'; do
 	sleep 1
 	echo -n "."
 done
-# Animated Spinner 
+
+# Animated spinner 
+
 spinner() {
      local pid=$1
      local delay=0.75
@@ -25,11 +28,14 @@ spinner() {
      done
      printf "   \b\b\b\b"
 }
-# Here we clear the screen and set the currsor to invisible 
-clear
 
+# Here we clear the screen and set the currsor to invisible 
+
+clear
 tput civis
+
 # Next we create the background art for the border of the stream
+
 background() {
 echo '
 
@@ -75,7 +81,10 @@ echo '
 
 //////////// PRESS CTRL+C TO END TRANSMISSION //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////'
-printf "https://steemit.com/@xsmith      "  # I put this there you can put what ever you want ...
+
+# I put this there you can put what ever you want ...
+
+printf "https://minds.com/xSmith      "  
 }
 
 # Finally we draw the background, use omxplayer to display the stream and deploy the spinner!
