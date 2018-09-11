@@ -13,7 +13,7 @@ for i in 'seq 1 5'; do
 	echo -n "."
 done
 
-# Animated spinner 
+# Animated spinner
 
 spinner() {
      local pid=$1
@@ -29,7 +29,7 @@ spinner() {
      printf "   \b\b\b\b"
 }
 
-# Here we clear the screen and set the currsor to invisible 
+# Here we clear the screen and set the currsor to invisible
 
 clear
 tput civis
@@ -84,7 +84,7 @@ echo '
 
 # I put this there you can put what ever you want ...
 
-printf "https://minds.com/xSmith      "  
+printf "You are the resistance ...      "
 }
 
 # Finally we draw the background, use omxplayer to display the stream and deploy the spinner!
@@ -94,5 +94,3 @@ background & omxplayer --win "0 100 1024 640"  -o local https://infowarslive-lh.
 # After that we reset the cursor to normal
 
 tput cnorm
-
-

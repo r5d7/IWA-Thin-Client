@@ -6,11 +6,14 @@ trap ctrl_c INT
 function ctrl_c() {
 	clear
 }
+# Now we define what this does
 
 for i in 'seq 1 5'; do
 	sleep 1
 	echo -n "."
 done
+
+# Animated spinner
 
 spinner() {
      local pid=$1
@@ -26,9 +29,12 @@ spinner() {
      printf "   \b\b\b\b"
 }
 
-clear
+# Here we clear the screen and set the currsor to invisible
 
+clear
 tput civis
+
+# Next we create the background art for the border of the stream
 
 background() {
 echo '
@@ -75,11 +81,16 @@ echo '
 
 //////////// PRESS CTRL+C TO END TRANSMISSION //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////'
+
+# I put this there you can put what ever you want ...
+
 printf "https://steemit.com/@xsmith      "
 }
 
+# Finally we draw the background, use omxplayer to display the stream and deploy the spinner!
+
 background & omxplayer --win "0 100 1024 640"  -o local https://streaminfo-live.secure.footprint.net/hls-live/streamroot2-streaminfo3/_definst_/live.m3u8 2>/dev/null 1>&2 & spinner $!
 
+# After that we reset the cursor to normal
+
 tput cnorm
-
-
