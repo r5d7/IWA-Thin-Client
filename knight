@@ -84,7 +84,7 @@ echo '
 
 # I put this there you can put what ever you want ...
 
-printf "https://steemit.com/@xsmith      "
+printf "You are the resistance ...      "
 }
 
 # Finally we draw the background, use omxplayer to display the stream and deploy the spinner!
