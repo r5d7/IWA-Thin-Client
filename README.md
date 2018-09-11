@@ -1,4 +1,7 @@
 # IWA-Thin-Client
+
+Infowars Army Thin Client
+
 A collection of bash scripts to watch Infowars on your Raspberry Pi Terminal 
 
 I wanted to watch the Alex Jones show on the Raspberry Pi 3 terminal. In order to use the script you'll need omxplayer installed. As of today everything was working so it's all good. You'll follow the same procedure for the rest of the scripts. 
